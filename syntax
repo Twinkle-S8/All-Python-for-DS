@@ -24,11 +24,6 @@ df=pd.read_csv(dataset_part_2_csv)
 df.head(5)
 
 
-(DV)  SEABORN:
-              SCATTERPLOT
-                         sns.catplot(y="", x="", hue="Class", data=df, aspect = 4)
-                         plt.xlabel("",fontsize=20)
-                         plt.ylabel("",fontsize=20)
-                         plt.show()
+
  
                       
