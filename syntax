@@ -23,6 +23,16 @@ dataset_part_2_csv = io.BytesIO((await resp.arrayBuffer()).to_py())
 df=pd.read_csv(dataset_part_2_csv)
 df.head(5)
 
+import pickle
+with open('model_pickle','wb') as file:
+    pickle.dump(model,file)
+with open('model_pickle','rb') as file:
+    mp = pickle.load(file)
+
+JOBLIB
+from sklearn.externals import joblib
+joblib.dump(model, 'model_joblib')
+mj = joblib.load('model_joblib')
 
 
  
